@@ -51,7 +51,7 @@ class cli(object):
 
         if args.h:
             parser.print_help()
-            return
+            sys.exit()
 
         return args
 
