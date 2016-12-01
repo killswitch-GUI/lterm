@@ -26,4 +26,4 @@ open up a terminal:
 lterm.py -h
 ```
 ## Example Usage: YouTube
-[![Example](http://img.youtube.com/vi/3rbCTW_IBrk/0.jpg)](https://www.youtube.com/watch?v=rbCTW_IBrk "Example")
+[![Example](http://img.youtube.com/vi/3rbCTW_IBrk/0.jpg)](https://www.youtube.com/watch?v=3rbCTW_IBrk&feature=youtu.be "Example")
