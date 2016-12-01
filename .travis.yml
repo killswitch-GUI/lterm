@@ -9,6 +9,6 @@ script:
   - "sudo python lterm.py"
   - "sudo python setup.py install"
   - "sudo lterm.py -h"
-  - nosetests --with-coverage
+  - sudo nosetests --with-coverage
 after_success:
   - coveralls
