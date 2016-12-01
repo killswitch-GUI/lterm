@@ -3,3 +3,24 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/85266d6254694b50b76b03a4cffd73d9)](https://www.codacy.com/app/iamfree2009/lterm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=killswitch-GUI/lterm&amp;utm_campaign=Badge_Grade)
 # lterm
 lterm is a small script built to install a bash hook for full terminal logging.
+
+## Install lterm
+
+Install via git
+
+```
+git clone https://github.com/killswitch-GUI/zlib_wrapper.git
+python setup.py install
+```
+
+Install via pip
+
+```
+pip install lterm
+```
+
+## Run lterm
+open up a terminal:
+``
+lterm.py -h
+```
