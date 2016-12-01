@@ -1,0 +1,10 @@
+language: python
+python:
+  - "2.7"
+install:
+  - pip install coveralls
+script:
+  - "sudo python lterm.py"
+  - nosetests --with-coverage
+after_success:
+  - coveralls
