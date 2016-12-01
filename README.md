@@ -7,23 +7,38 @@ lterm is a small script built to install a bash hook for full terminal logging.
 
 ## Install lterm
 
-Install via git
-
+### Install via git
+You can do this to maintain newest version.
 ```
-git clone https://github.com/killswitch-GUI/zlib_wrapper.git
-python setup.py install
+$ git clone https://github.com/killswitch-GUI/zlib_wrapper.git
+$ python setup.py install
 ```
 
-Install via pip
-
+### Install via pip
+Easy to setup and runs from any user global $PATH
 ```
-pip install lterm
+$ pip install lterm
 ```
 
 ## Run lterm
 open up a terminal:
 ```
-lterm.py -h
+$ lterm.py -h
+
+usage: lterm.py [-i] [-l /root/test/] [-r] [-v] [-b]
+
+lterm is utility to log all bash windows opened by any user on the system.
+This offten is useful for data logging on critical systems.
+
+optional arguments:
+  -i              Install logging
+  -l /root/test/  Logging location (full path)
+  -r              Remove Logging and restore to intial state, this will
+                  attempt to use the backup file created from -b
+  -v              Set verbose output
+  -b              Backup RC file during install
+
 ```
+
 ## Example Usage: YouTube
 [![Example](http://img.youtube.com/vi/3rbCTW_IBrk/0.jpg)](https://www.youtube.com/watch?v=3rbCTW_IBrk&feature=youtu.be "Example")
