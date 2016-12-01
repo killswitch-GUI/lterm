@@ -1,5 +1,6 @@
 
 language: python
+sudo: required
 python:
   - "2.7"
 install:
@@ -9,6 +10,6 @@ script:
   - "sudo python lterm.py"
   - "sudo python setup.py install"
   - "sudo lterm.py -h"
-  - sudo nosetests --with-coverage
+  - nosetests --with-coverage
 after_success:
   - coveralls
