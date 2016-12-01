@@ -13,7 +13,7 @@ class cli(object):
     cli parser object for commands
     """
 
-    def __init__(self, verbose=False):
+    def __init__(self):
 
         """
         populates init, builds cli command object
@@ -67,7 +67,7 @@ class lterm(cli):
     INSTALL_SCRIPT  = """test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f """ 
     INSTALL_SCRIPT2 = """.lterm/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)\n"""
 
-    def __init__(self, verbose=False):
+    def __init__(self):
 
         """
         populates init for main lterm class
@@ -101,13 +101,13 @@ class lterm(cli):
         b = self.RC[self.os] + self.RC_BACKUP
         if os.path.isfile(b):
             if self.verbose:
-                "[*] Backupfile detected, using this to restore"
+                print "[*] Backupfile detected, using this to restore"
             if not self._check_install():
                 print "[*] Failed to find rc logging script installed.. now quiting"
             shutil.copy(b, self.RC[self.os])
         else:
             if self.verbose:
-                "[*] Backupfile not detected, using first line to restore"
+                print "[*] Backupfile not detected, using first line to restore"
             with open(self.RC[self.os], "r") as f:
                 old = f.readlines()
             if not self._check_install():
