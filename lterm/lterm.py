@@ -13,12 +13,14 @@ class cli(object):
     cli parser object for commands
     """
 
-    def __init__(self):
+    def __init__(self, test_cmd=''):
 
         """
         populates init, builds cli command object
         """
+        self.test_cmd = test_cmd
         self.args = self.cli_parser()
+        
 
     def cli_parser(self):
 
@@ -42,7 +44,10 @@ class cli(object):
             '-b', action="store_true", help='Backup RC file during install')
         parser.add_argument('-h', '-?', '--h', '-help',
                             '--help', action="store_true", help=argparse.SUPPRESS)
-        args = parser.parse_args()
+        if not self.test_cmd:
+            args = parser.parse_args()
+        else:
+            args = parser.parse_args(self.test_cmd.split())
 
         if args.h:
             parser.print_help()
@@ -67,12 +72,12 @@ class lterm(cli):
     INSTALL_SCRIPT  = """test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f """ 
     INSTALL_SCRIPT2 = """.lterm/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)\n"""
 
-    def __init__(self):
+    def __init__(self, test_cmd=''):
 
         """
         populates init for main lterm class
         """
-        cli.__init__(self)      # init the class
+        cli.__init__(self, test_cmd)      # init the class
         self.verbose = self.args.v
         self.os = self._check_os()   # check current OS for proper RC file
 
