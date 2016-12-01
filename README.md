@@ -21,6 +21,6 @@ pip install lterm
 
 ## Run lterm
 open up a terminal:
-``
+```
 lterm.py -h
 ```
