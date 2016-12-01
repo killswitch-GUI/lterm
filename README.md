@@ -3,7 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/85266d6254694b50b76b03a4cffd73d9)](https://www.codacy.com/app/iamfree2009/lterm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=killswitch-GUI/lterm&amp;utm_campaign=Badge_Grade)
 
 # lterm
-lterm is a small script built to install a bash hook for full terminal logging.
+lterm is a small script built to install a bash hook for full terminal logging. I use this on Red Team engagments to track down and log issues. This is very helpful for backup of crictical data you may lose do to powerloss etc.
 
 ## Install lterm
 
