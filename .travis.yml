@@ -8,6 +8,7 @@ install:
 script:
   - "cd lterm"
   - "sudo python lterm.py -h"
+  - "nosetests --with-coverage"
   - "sudo nosetests --with-coverage"
 after_success:
   - coveralls
