@@ -4,5 +4,15 @@ from lterm import lterm
 
 
 def test_all():
-	sys.argv.append('-h')
-	l = lterm.lterm()
+	l = lterm.lterm(test_cmd='-h')
+	l.execute()
+	l = lterm.lterm(test_cmd='-i')
+	l.execute()
+	l = lterm.lterm(test_cmd='-i -v')
+	l.execute()
+	l = lterm.lterm(test_cmd='-i -v -l ~/ -b')
+	l.execute()
+	l = lterm.lterm(test_cmd='-i -v -l ~/')
+	l.execute()
+	l = lterm.lterm(test_cmd='-r -v')
+	l.execute()
