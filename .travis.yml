@@ -7,6 +7,8 @@ install:
 script:
   - "cd lterm"
   - "sudo python lterm.py"
+  - "sudo python setup.py install"
+  - "sudo lterm.py -h"
   - nosetests --with-coverage
 after_success:
   - coveralls
