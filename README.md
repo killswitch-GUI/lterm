@@ -2,7 +2,7 @@
 [![Code Health](https://landscape.io/github/killswitch-GUI/lterm/master/landscape.svg?style=flat)](https://landscape.io/github/killswitch-GUI/lterm/master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/85266d6254694b50b76b03a4cffd73d9)](https://www.codacy.com/app/iamfree2009/lterm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=killswitch-GUI/lterm&amp;utm_campaign=Badge_Grade)
 
-[![Everything Is AWESOME](http://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=3rbCTW_IBrk "Everything Is AWESOME")
+[![Everything Is AWESOME](http://img.youtube.com/vi/3rbCTW_IBrk/0.jpg)](https://www.youtube.com/watch?v=rbCTW_IBrk "Everything Is AWESOME")
 
 # lterm
 lterm is a small script built to install a bash hook for full terminal logging.
