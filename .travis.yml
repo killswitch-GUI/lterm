@@ -7,9 +7,7 @@ install:
   - pip install coveralls
 script:
   - "cd lterm"
-  - "sudo python lterm.py"
-  - "sudo python setup.py install"
-  - "sudo lterm.py -h"
-  - nosetests --with-coverage
+  - "sudo python term.py -h"
+  - sudo nosetests --with-coverage
 after_success:
   - coveralls
