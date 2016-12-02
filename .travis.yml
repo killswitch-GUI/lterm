@@ -5,7 +5,7 @@ python:
   - "2.7"
 install:
   - sudo pip install nose
-  - pip install coveralls
+  - sudo pip install coveralls
 script:
   - "cd lterm"
   - "sudo python lterm.py -h"
