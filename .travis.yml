@@ -7,8 +7,6 @@ install:
   - sudo pip install nose
   - sudo pip install coveralls
 script:
-  - "cd lterm"
-  - "sudo python lterm.py -h"
   - sudo nosetests --with-coverage
 after_success:
   - coveralls
