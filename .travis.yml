@@ -6,6 +6,7 @@ python:
 install:
   - sudo pip install nose
   - sudo pip install coveralls
+  - sudo pip install coverage 
 script:
   - sudo nosetests --with-coverage
 after_success:
