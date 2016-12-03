@@ -8,6 +8,6 @@ install:
   - sudo pip install coveralls
   - sudo pip install coverage 
 script:
-  - sudo nosetests --with-coverage
+  - sudo nosetests --with-coverage --cover-package=lterm
 after_success:
   - coveralls
